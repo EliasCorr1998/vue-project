@@ -1,0 +1,425 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background: #292b33;
+  color: white;
+}
+body a{
+  text-decoration: none;
+}
+/*  --------------------HEADER---------------------  */
+header{
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  border-top: 5px solid #333333;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+.logo{
+  display: flex;
+}
+.logo img{
+  height: 60px;
+  width: 70px;
+  padding-right: 10px;
+}
+.logo h2{
+  color: white;
+}
+/*  --------------------BANNER---------------------  */
+.banner{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+.banner .img-banner{
+  width: 100%;
+  height: 500px;
+}
+.banner .div1{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.banner .div2{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+}
+.banner .div2 .img-text{
+  width: 100%;
+}
+.banner .div3{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.banner .div4{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+}
+.banner .btn-read1{
+      display: block;
+      width: 30%;
+      height: 50px;
+      border: none;
+      border-radius: 20px;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      border: 1px solid white;
+      background: none;
+}
+
+/*  --------------------CARDS---------------------  */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 10px;
+  padding-top: 50px;
+  text-align: center;
+}
+.card {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  color: #000;
+  background: white;
+  width: 80%;
+  height: 200px;
+  border-radius: 15%;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+.cards h3,p{
+  color: black;
+}
+.cards .card img{
+  width: 20%;
+  padding-top: 20px;
+}
+/*  --------------------backpacking---------------------  */
+.backpacking{
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.backpacking .paisaje1{
+  position: absolute;
+  border-radius: 1000%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-20%, -100%);
+}
+.backpacking .paisaje2{
+  border: 10px solid white;
+  border-radius: 1000%;
+  width: 200px;
+  height: 200px;
+  transform: translate(10%, -5%);
+
+}
+.backpacking .paisaje3{
+  position: absolute;
+  border: 20px solid white;
+  border-radius: 1000%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-150%, 60%);
+}
+.backpacking p{
+  margin:0px auto;
+  width: 80%;
+  color: white;
+}
+.backpacking h1{
+  margin-top: 150px;
+}
+.btn-read{
+  background: white;
+  display: block;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 10px;
+  height: 50px;
+  border-radius: 20px;
+}
+/*  --------------------ABOUT US---------------------  */
+.about{
+  text-align: center;
+}
+.about .about-princ{
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+}
+.about p{
+  color: white;
+}
+.about .about-parraf{
+  background: white;
+  margin: 30px;
+  border-radius: 20px;
+  height: 400px;
+}
+.about .about-parraf p{
+  color: black;
+  padding: 20px;
+  text-align: justify;
+}
+.about .about-parraf .btn-parraf{
+  background: #f58d54;
+  color: white;
+  display: block;
+  width: 60%;
+  height: 50px;
+  border: 0;
+  border-radius: 20px;
+  margin-left: 4%;
+  margin-top: -4%;
+}
+/*  --------------------imagenes---------------------  */
+.images img{
+  width: 100%;
+}
+/*  --------------------formulario---------------------  */
+.formulario{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 100px;
+  text-align: center;
+}
+.formulario input, textarea{
+  height: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.formulario textarea{
+  height: 100px;
+}
+.formulario .btn-form{
+  background: #f58d54;
+  color: white;
+  display: block;
+  width: 60%;
+  height: 50px;
+  border: 0;
+  margin-left: 20%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+/*  --------------------footer---------------------  */
+footer{
+  background: #333333;
+  text-align: center;
+  height: 0px;
+}
+footer p{
+  margin-top: 10px;
+  color: white;
+  padding-top: auto;
+  margin-bottom: 0%;
+}
+
+/*  //////////////////////MEDIA/////////////////////  */
+
+@media (min-width: 540px) {
+
+/*  --------------------HEADER---------------------  */
+  header{
+      display: block;
+  }
+/*  --------------------BANNER---------------------  */
+  .banner .btn-read1{
+      width: 25%;
+  }
+/*  --------------------CARDS---------------------  */
+  .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+/*  --------------------ABOUT US---------------------  */
+  .about .about-parraf{
+      height: 270px;
+  }
+  .about .about-parraf .btn-parraf{
+      width: 30%;
+  }
+/*  --------------------formulario---------------------  */
+  .formulario input{
+      width: 50%;
+      margin-bottom: 20px;
+  }
+  .formulario .form-input{
+      display: flex;
+  }
+  .formulario .form-input .input2{
+      margin-left: 5%;
+  }
+  .formulario .btn-form{
+      margin-left: 1%;
+      width: 100%;
+  }
+}
+/*  //////////////////////MEDIA PC/////////////////////  */
+@media (min-width: 1000px) {
+/*  --------------------HEADER---------------------  */
+
+/*  --------------------BANNER---------------------  */
+.banner .div1{
+  position: absolute;
+}
+
+.banner .div2{
+  position: absolute;
+  width: 15%;
+  transform: translate(-50%, -70%);
+
+}
+.banner .div2 .img-text{
+  width: 100%;
+}
+.banner .div3{
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.banner .div3 h1{
+  font-size: 70px;
+}
+.banner .div4{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+}
+.banner .btn-read1{
+      display: block;
+      width: 10%;
+}
+/*  --------------------CARDS---------------------  */
+
+/*  --------------------backpacking---------------------  */
+.backpacking{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.backpacking .paisaje1{
+  position: absolute;
+  border-radius: 1000%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, 0%);
+}
+.backpacking .paisaje2{
+  border: 5px solid white;
+  border-radius: 1000%;
+  width: 400px;
+  height: 400px;
+  transform: translate(40%, -5%);
+
+}
+.backpacking .paisaje3{
+  position: absolute;
+  border: 10px solid white;
+  border-radius: 1000%;
+  width: 250px;
+  height: 250px;
+  transform: translate(-160%, 90%);
+}
+.btn-read{
+  background: #f58d54;
+  color: white;
+  display: block;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+}
+/*  --------------------ABOUT US---------------------  */
+.about{
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+}
+.about .about-princ{
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+}
+.about p{
+  color: white;
+}
+.about .about-parraf{
+  background: white;
+  margin: 30px;
+  border-radius: 20px;
+  height: 270px;
+}
+.about .about-parraf p{
+  color: black;
+  padding: 20px;
+  text-align: justify;
+}
+.about .about-parraf .btn-parraf{
+  background: #f58d54;
+  color: white;
+  display: block;
+  width: 60%;
+  height: 50px;
+  border: 0;
+  border-radius: 20px;
+  margin-left: 4%;
+  margin-top: -4%;
+}
+/*  --------------------imagenes---------------------  */
+.images{
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+}
+.images img{
+  object-fit: cover;
+  width: 33%;
+  height: 300px;
+}
+/*  --------------------formulario---------------------  */
+.formulario{
+  width: 40%;
+  margin-left: 30%;
+}
+.formulario input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.formulario .form-input{
+  display: flex;
+}
+.formulario .form-input .input2{
+  margin-left: 5%;
+}
+.formulario .btn-form{
+  margin-left: 1%;
+  width: 100%;
+}
+}
+
